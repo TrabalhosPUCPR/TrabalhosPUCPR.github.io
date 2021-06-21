@@ -4,7 +4,26 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Leonardo Matthew Knight</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link id="stylesheet" rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript">
+			function layout(){
+				var style = document.getElementById("stylesheet");
+				if(window.innerWidth < 1148){
+					style.setAttribute("href", "css/menor.css");
+				} 
+				else if(window.innerWidth < 1700){
+					style.setAttribute("href", "css/main.css"); 
+				}
+				else{
+					style.setAttribute("href", "css/grande.css");
+				}
+			}
+				   
+			window.onresize = layout;
+			layout();
+
+		</script>
+		
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital@1&display=swap" rel="stylesheet">
@@ -40,7 +59,8 @@
 					<div class="linhadesc"></div>
 					<div class="botoes">
 						<a href="https://github.com/Knightleo602"><img src="image/github.png" width="40px" alt="github logo"></a>					
-						<a href="#"><img src="image/email.png" width="55px" alt="github logo"></a>
+						<a href="#" onClick="funcao('knight_leo@aol.com')"><img src="image/email.png" width="55px" alt="github logo"></a>
+						<div id="copiado" class="copiado">Email copiado no clipboard</div>
 						<div class="linhabotoes"></div>
 					</div>
 				</div>
@@ -91,4 +111,17 @@
 			
 		</div>
 	</body>
+	<script type="text/javascript">
+		function funcao(email){
+			div = document.getElementById("copiado");
+			if(div.classList != "animar"){
+				div.classList.add("animar");
+				navigator.clipboard.writeText(email);
+			}
+			setTimeout(function(){
+				div.classList.remove("animar");
+			}, 4000);
+			
+		}
+	</script>
 </html>

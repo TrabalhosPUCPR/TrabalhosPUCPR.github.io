@@ -69,9 +69,9 @@ h1 { /*titulo*/
 	outline: solid;
 	outline-color: black;
 	outline-width: 5px;
-	height: 105%;
+	height: 140%;
 	position: relative;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 	overflow: scroll;
 	overflow-x: hidden;

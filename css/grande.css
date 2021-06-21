@@ -69,7 +69,7 @@ h1 { /*titulo*/
 	outline: solid;
 	outline-color: black;
 	outline-width: 5px;
-	height: 105%;
+	height: 120%;
 	position: relative;
 	width: 70%;
 	margin: 0 auto;
@@ -93,48 +93,49 @@ h1 { /*titulo*/
 
 .sobremim{
 	width: 90%;
-	height: 450px;
+	height: 650px;
 	/*background-color: blue;*/
 	margin-left: 70px;
 	top: 50px;
 	position: relative;
+	margin: 0 auto;
 }
 
 .foto{
-	width: 200px;
-	height: 200px;
+	width: 320px;
+	height: 320px;
 	background-image: url("../image/foto.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	box-shadow: -5px 10px black;
+	box-shadow: -5px 20px black;
 	position: relative;
 	border-radius: 25px;
 }
 
 .nome{
-	left: 240px;
+	left: 400px;
 	top: 30px;
 	position: absolute;
 	
 }
 
 .nome h1{
-	font-size: 280%;
+	font-size: 60px;
 	color: white;
 }
 
 .nome p{
-	font-size: 20px;
+	font-size: 25px;
 	color: darkgray;
 	margin-left: 20px;
-	margin-top: 25px;
+	margin-top: 45px;
 }
 
 .linhanome{
 	width: 100%;
 	height: 1px;
-	margin-top: 20px;
+	margin-top: 50px;
 	background-color: gray;
 	position: relative;
 }
@@ -164,30 +165,30 @@ h1 { /*titulo*/
 }
 
 .descadicional{
-	margin-left: 17px;
-	width: 170px;
+	margin-left: 20px;
+	width: 270px;
 	position: relative;
 }
 
 .descadicional p{
 	
 	color: darkgray;
-	margin-top: 15px;
+	margin-top: 45px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .linhadesc{
 	width: 1px;
 	height: 100%;
-	margin-top: -110px;
-	margin-left: 205px;
+	margin-top: -120px;
+	margin-left: 315px;
 	background-color: gray;
 	position: absolute;
 }
 
 .botoes{
-	margin-left: 25px;
+	margin-left: 75px;
 	position: relative;
 	margin-top: 50px;
 	width: 100%;
@@ -197,6 +198,8 @@ h1 { /*titulo*/
 	box-shadow: 0px 0px black;	
 	vertical-align: middle;
 	margin-right: 30px;
+	max-width: 50px;
+	max-height: 50px;
 }
 
 .botoes img:hover{
@@ -204,7 +207,6 @@ h1 { /*titulo*/
 	transition: 0.5s;
 	margin-top: 15px;
 }
-
 
 .linhabotoes{
 	width: 1px;
@@ -219,36 +221,40 @@ h1 { /*titulo*/
 	position: absolute;
 	margin-left: 250px;
 	height: 190px;
-	width: 480px;
+	width: 800px;
 	
 }
 
 .habilidades h1{
-	font-size: 30px;
+	font-size: 50px;
+	margin-top: -50px;
 	margin-bottom: 7px;
+	margin-left: 150px;
 }
 
 .habilidades p{
-	margin-left: 10px;
+	margin-top: 30px;
+	margin-left: 160px;
+	font-size: 20px;
 }
 
 .habilidades p, .habilidades ul{
 	color: darkgray;
-	font-size: 20px;
+	font-size: 23px;
 }
 
 ul{
-	margin-top: 15px;
-	margin-left: 40px;
+	margin-top: 35px;
+	margin-left: 200px;
 }
 
 /* 		PROJETOS		*/
 
 .projetos{
-	margin-top: 60px;
-	width: 100%;
+	width: 80%;
 	height: 1000px;
 	position: relative;
+	margin: 60px auto;
 }
 
 .projetos h1{
@@ -283,7 +289,7 @@ ul{
 #preview, #preview2, #preview3{
 	width: 300px;
 	height: 300px;
-	margin-top: 15px;
+	margin-top: 25px;
 	box-shadow: -5px 10px black;
 	float: left;
 }
@@ -311,6 +317,11 @@ ul{
 
 .linhaesquerda{
 	float: left;
+	margin-left: -50px;
+}
+
+.linhadireita{
+	margin-right: -50px;
 }
 
  .chippo a h1, .desdivino a h1, .guitarino a h1{
@@ -371,22 +382,21 @@ ul{
 }
 
 #tituloproj, #tituloproj2{
-	margin-top: 30px;
 	font-size: 40px;
 	color: rgba(251,251,251,1.00);
 } 
 
 #tituloproj{
-	-webkit-text-stroke: 2px black;
-	margin-top: 20px;
-	font-size: 30px;
+	-webkit-text-stroke: 3px black;
+	margin-top: 50px;
+	font-size: 40px;
 	font-family: desdivino;
 }
 
 #tituloproj2{
-	-webkit-text-stroke: 2px black;
-	margin-top: -20px;
-	font-size: 50px;
+	-webkit-text-stroke: 3px black;
+	margin-top: 50px;
+	font-size: 70px;
 	font-family: guitarhero;
 }
 
