@@ -10,6 +10,16 @@
 	
 }
 
+@font-face{
+	font-family: guitarhero;
+	src: url("../fonts/Nightmare_Hero_Normal.ttf");
+}
+
+@font-face{
+	font-family: desdivino;
+	src: url("../fonts/FOT-RodinHimawariPro-UB.otf");
+}
+
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -19,7 +29,7 @@
 }
  
 ::-webkit-scrollbar-thumb {
-	background: #838383; 
+	background: #707070; 
 	border-radius: 35px;
 }
 
@@ -55,7 +65,6 @@ h1 { /*titulo*/
 	font-weight: 400;
 	color: white;
 }
-
 .base {
 	outline: solid;
 	outline-color: black;
@@ -70,7 +79,7 @@ h1 { /*titulo*/
 
 .background{
 	width: 100%;
-	min-height: 202%;
+	min-height: 204%;
 	position: absolute;
 	background-color: rgba(35,35,35,0.75);
 
@@ -215,10 +224,11 @@ ul{
 	text-align: center;
 	font-size: 40px;
 	-webkit-text-stroke: 1px black;
+	font-family: 'Proza Libre', sans-serif;
 }
 
 .chippo, .desdivino, .guitarino{
-	width: 80%;
+	width: 82%;
 	height: 400px;
 	margin: 35px auto;
 	text-align: center;
@@ -232,6 +242,7 @@ ul{
 	float: right;
 	padding-top: 70px;
 	position:relative;
+	font-family: 'PT Serif', serif;
 }
 
 .desdivino p {
@@ -274,15 +285,15 @@ ul{
  .chippo a h1, .desdivino a h1, .guitarino a h1{
 	text-decoration: none;
 	float: right;
-	padding-right: 35px;
-	font-size: 35px;
-		
+	font-size: 40px;
+	font-family: 'Proza Libre', sans-serif;
 }
+
 
 .desdivino a h1{
 	float: left;
 	margin-top: 0px;
-	margin-left: 20px;
+	margin-left: 0px;
 }
 
 .desdivino h1{
@@ -295,7 +306,15 @@ ul{
 	color: rgba(251,251,251,1.00);
 } 
 
+#tituloproj{
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: desdivino;
+}
+
 #tituloproj2{
 	margin-top: -20px;
+	font-size: 50px;
+	font-family: guitarhero;
 }
 
